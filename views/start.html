@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Food Map</title>
+  <!-- Import Font Google-->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <!-- Import Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Import Bootstrap.css-->
+  <link type="text/css" rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="../css/start.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="title">Foodmap</h1>
+          <hr class="content">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- First Section -->
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="../assets/images/map.png" alt="map">
+      </div>
+      <div class="col-xs-12">
+        <h3>Comida cerca de ti</h3>
+      </div>
+    </div>
+    <form>
+      <div class="input-group">
+        <input id="restaurantes" type="text" class="form-control" name="restaurantes" placeholder="Filtrar restaurantes">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </span>
+      </div>
+    </form>
+  </section>
+  <!-- Second Section -->
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 container-second-section">
+        <div class="col-xs-5 container-img">
+          <img src="../assets/images/restaurants/comida-sana/1.jpg" alt="comida">
+        </div>
+        <div class="col-xs-3 container-img">
+          <img src="../assets/images/restaurants/comida-sana/2.jpg" alt="comida">
+        </div>
+        <div class="col-xs-4 container-img">
+          <img src="../assets/images/restaurants/comida-sana/3.jpg" alt="comida">
+        </div>
+        <div class="col-xs-6 container-img">
+          <img src="../assets/images/restaurants/comida-sana/4.jpg" alt="comida">
+        </div>
+        <div class="col-xs-6 container-img">
+          <img src="../assets/images/restaurants/comida-sana/5.jpg" alt="comida">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Import jQuery and Bootstrap.js -->
+  <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/restaurant.js"></script>
+</body>
+
+</html>

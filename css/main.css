@@ -1,0 +1,35 @@
+/* Los estilos de tu proyecto */
+
+/* Gobal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Lobster', cursive;
+}
+  
+/* Styles for splash view */
+
+.background {
+  background: linear-gradient(130deg, #2B1E66 4%, #B7077D 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 55%;
+  /* font-size: 9rem;
+  font-weight: 800;
+  text-align: center; */
+}
+
