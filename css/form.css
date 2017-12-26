@@ -1,0 +1,51 @@
+/* Gobal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+  text-align: center;
+}
+  
+/* Styles for header */
+
+.container-button {
+  margin-top: 35px;
+}
+
+.button {
+  border-radius: 50%
+}
+
+span {
+  color: #EA0B8C
+}
+
+hr {
+  margin-top: 0;
+}
+
+/* Styles for section form */
+
+.button-flags {
+  padding-right: 2.5rem;
+}
+
+.flags-dropdown-menu {
+  min-width: 8rem;
+}
+
+[alt="flags"] {
+  width: 100%;
+}
+
+.text {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.button-next {
+  background-color: #EA0B8C;
+  color: #fff;
+}
