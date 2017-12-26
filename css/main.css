@@ -6,6 +6,7 @@
   box-sizing: border-box;
   color: #fff;
   font-family: 'Lobster', cursive;
+  text-align: center;
 }
   
 /* Styles for splash view */
@@ -28,3 +29,16 @@ img {
   width: 55%;
 }
 
+.container-text {
+  top: 5rem;
+}
+
+.container-main {
+  top: 7rem; 
+}
+
+a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 1.5rem;
+}

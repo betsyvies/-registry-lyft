@@ -1,0 +1,49 @@
+/* Gobal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+   
+/* Styles for header */
+
+header {
+  text-align: center;
+}
+
+.container-button {
+  margin-top: 35px;
+}
+
+.button {
+  border-radius: 50%
+}
+
+span {
+  color: #EA0B8C
+}
+
+hr {
+  margin-top: 0;
+}
+
+/* Styles for form */
+
+.container-input {
+  margin-bottom: 2rem;
+}
+
+.container-checkbox {
+  text-align: center;
+}
+
+.container-button-next {
+  margin-top: 20rem;
+}
+
+.button-next {
+  background-color: #EA0B8C;
+  color: #fff;
+}
