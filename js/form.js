@@ -6,6 +6,11 @@ $(document).ready(function() {
     {pais: 'USA'},
     {pais: 'Colombia'},
   ];
+
+  /* Usaremos esta funcion para arrojar numeros aleatorios */
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
   
   /* Al hacer click en el dropdown se mostrarán las banderas */
   $('.button-flags').click(function(event) {
@@ -37,8 +42,16 @@ $(document).ready(function() {
         if (valNum === 10) {
           $('.button-next')
             .removeAttr('disabled')
+            /* Al hacer click en el boton se le enviará un codigo random */
             .click(function() {
+              var random1 = getRandomInt(0, 9);
+              var random2 = getRandomInt(0, 9);
+              var random3 = getRandomInt(0, 9);
 
+              data['random'] = [random1, random2, random3];
+
+              alert('Tu código: LAB-' + random1 + random2 + random3);
+              window.location.assign('code.html');
             });
         }
       });
