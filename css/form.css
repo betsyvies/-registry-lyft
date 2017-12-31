@@ -40,6 +40,10 @@ hr {
   width: 100%;
 }
 
+.input-control {
+  text-align: left;
+}
+
 .text {
   margin-top: 1rem;
   margin-bottom: 3rem;

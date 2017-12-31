@@ -14,6 +14,19 @@
   margin-top: 2rem;
 }
 
+.container-button-header {
+  margin-top: 35px;
+}
+
+.button-header {
+  border-radius: 50%
+}
+
+span {
+  color: #EA0B8C
+}
+
+
 hr {
   margin-top: 0;
 }
