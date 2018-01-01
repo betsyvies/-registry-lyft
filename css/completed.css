@@ -8,7 +8,7 @@
   font-family: 'Lobster', cursive;
   text-align: center;
 }
-  
+    
 /* Styles for splash view */
 
 .background {
@@ -18,15 +18,35 @@
   align-items: center;
   height: 100vh;
 }
-
+  
 .container-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+ 
 img {
   width: 55%;
 }
+  
+.container-text {
+  top: 5rem;
+}
+  
+.container-main {
+  top: 7rem; 
+}
+  
+.container-main a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 1.5rem;
+}
 
+.container-user {
+  top: 8.5rem;
+}
 
+.container-user a {
+  color: #fff;
+}

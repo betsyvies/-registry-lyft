@@ -35,9 +35,17 @@ hr {
   margin-bottom: 2rem;
 }
 
+#input-float {
+  float: left;
+  margin-bottom: 2rem;
+}
+
+#input-left {
+  float: left;
+}
+
 .container-checkbox {
   text-align: center;
-  padding: 2rem;
 }
 
 .container-button-next {
