@@ -4,6 +4,7 @@ function begin() {
   var $email = $('#email');
   var $checkbox = $('#checkbox');
   var $submit = $('#submit');
+  var $redirectorButton = $('#redirector-button');
 
   function isNameValid() {
     /* Usaremos una expresion regular para validar que escriba bien su nombre */
@@ -35,6 +36,10 @@ function begin() {
     window.location.assign('completed.html');
   }
 
+  function redirectorButton() {
+    window.location.assign('code.html');
+  }
+
   /* Hacemos focus al input name */
   $name.focus();
 
@@ -58,6 +63,9 @@ function begin() {
 
   $submit
     .on('click', redirectSight);
+
+  $redirectorButton
+    .on('click', redirectorButton);
 
   formStateEvent();
 }
