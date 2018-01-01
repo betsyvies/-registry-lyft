@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function form() {
   /* Hacemos un array de objetos para acceder más rapido a la data */
   paises = [
     {pais: 'Perú'},
@@ -9,9 +9,9 @@ $(document).ready(function() {
 
   /* Usaremos esta funcion para arrojar numeros aleatorios */
   function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+    return Math.floor(10 + (Math.random() * (max - min)) * 90) + min;
   }
-  
+
   /* Al hacer click en el dropdown se mostrarán las banderas */
   $('.button-flags').click(function(event) {
     /* Validamos el texto y mostramos las imagenes */
@@ -33,6 +33,9 @@ $(document).ready(function() {
 
     var dataPostal = $(this).attr('data-postal');
 
+    /* Guardamos el codigo postal del país para mostrarlo en la siguiente vista */
+    localStorage.setItem('postalCode', dataPostal);
+
     $('#input-form')
       .val(dataPostal)
       .keyup(function() {
@@ -44,13 +47,12 @@ $(document).ready(function() {
             .removeAttr('disabled')
             /* Al hacer click en el boton se le enviará un codigo random */
             .click(function() {
-              var random1 = getRandomInt(0, 9);
-              var random2 = getRandomInt(0, 9);
-              var random3 = getRandomInt(0, 9);
+              var random = getRandomInt(0, 9);
 
-              data['random'] = [random1, random2, random3];
-
-              alert('Tu código: LAB-' + random1 + random2 + random3);
+              /* Utilizamos este metodo por que nos permite almacenar el valor localmente */
+              localStorage.setItem('code', random);
+              
+              alert('Tu código: LAB-' + random);
               window.location.assign('code.html');
             });
         }
