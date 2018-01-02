@@ -1,6 +1,6 @@
 # Lyft
 
-- Lyft es una web-app donde usted puede registrarse para ser parte de nuestra familia.
+- Lyft es una web-app donde usted puede registrarse para acceder a nuestro servicio de calidad en el rubro de transporte, tambien tendrá acceso a tarifas y a la seguridad que se merece.
 
 ## Objetivo
 
