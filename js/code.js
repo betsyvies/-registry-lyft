@@ -3,9 +3,9 @@ $(document).ready(function() {
   var $resendCode = $('#resend-code');
   var $redirectorButton = $('#redirector-button');
 
-  /* Agregamos el código postal del país seleccionado al span */
-  var postalCode = window.localStorage.getItem('postalCode');
-  $('.postal-code').text('+' + postalCode);
+  /* Agregamos el código postal del país seleccionado y el numero telefonico al span */
+  var phoneNum = window.localStorage.getItem('phoneNum')
+  $('.postal-code').text('+' + phoneNum);
 
   /* Usaremos esta funcion para arrojar numeros aleatorios */
   function getRandomInt(min, max) {

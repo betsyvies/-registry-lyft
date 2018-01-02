@@ -37,14 +37,15 @@ $(document).ready(function form() {
 
     var dataPostal = $(this).attr('data-postal');
 
-    /* Guardamos el codigo postal del país para mostrarlo en la siguiente vista */
-    localStorage.setItem('postalCode', dataPostal);
-
     $('#input-form')
       .val(dataPostal)
       .focus()
       .on('keyup', function() {
-        var valNum = $(this).val().length - dataPostal.length;
+        var phoneNum = $(this).val();
+        var valNum = phoneNum.length - dataPostal.length;
+
+        /* Guardamos el codigo postal del país y el número telefonico, para mostrarlo en la siguiente vista */
+        localStorage.setItem('phoneNum', phoneNum);
 
         /* Verificamos si se ingreso un número de 10 digitos sin contar el codigo postal */
         if (valNum === 10) {
